@@ -1,3 +1,46 @@
 ---
+// Data
+import { basics } from '@cv';
 
+// UI
+import TitleH1 from '@/components/TitleH1.astro';
+import Text15 from '@/components/Text15.astro';
+import Icon from '@/components/Icon.astro';
+
+const {name, label, image, email, phone, url, summary, location} = basics;
 ---
+
+<section class="intro">
+    <div class="intro_data">
+        <TitleH1 title={name} />
+        <Text15 text={label} />
+        <section class="intro_data_location">
+            <Icon path="/location-icon.svg" alt="Location icon" width={20} height={20} />
+            <Text15 text=`${location.city}, ${location.region}` marginBottom={0} />
+        </section>
+    </div>
+    <div class="intro_img"></div>
+</section>
+
+<style lang="scss">
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        &_data {
+            
+            &_location {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        &_img {
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>

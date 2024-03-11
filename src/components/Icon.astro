@@ -1,0 +1,16 @@
+---
+interface Props {
+    path: string;
+    alt: string;
+    width: number;
+    height: number;
+}
+
+const { path, alt, width, height } = Astro.props;
+---
+
+<img class="icon" src={path} alt={alt} width={width} height={height} />
+
+<style>
+    img {}
+</style>

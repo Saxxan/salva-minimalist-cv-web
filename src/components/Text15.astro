@@ -1,0 +1,22 @@
+---
+interface Props {
+    text: string;
+    marginBottom?: number;
+}
+
+const { text, marginBottom } = Astro.props;
+
+const margenInferior = marginBottom !== undefined ? `${marginBottom}px` : '5px';
+---
+
+<p style=`margin-bottom: ${margenInferior}`>
+    {text}
+</p>
+
+<style>
+    p {
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 0;
+    }
+</style>
