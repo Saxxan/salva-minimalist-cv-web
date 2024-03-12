@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "Salvador Puche Ibáñez",
-        "label": "Frontend Developer",
+        "label": "Frontend Developer focused on creating responsive, accesible and usable UI/UX.",
         "image": "",
         "email": "salva.pucheibanez@gmail.com",
         "phone": "",
-        "url": "https://johndoe.com",
-        "summary": "",
+        "url": "",
+        "summary": "About description",
         "location": {
             "address": "",
             "postalCode": "46021",
@@ -16,9 +16,14 @@
         },
         "profiles": [
             {
-                "network": "Twitter",
-                "username": "salvaPIbez",
-                "url": "https://twitter.com/salvaPIbez"
+                "network": "Github",
+                "username": "Saxxan",
+                "url": "https://github.com/Saxxan"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Salvador Puche Ibáñez",
+                "url": "https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/"
             }
         ]
     },

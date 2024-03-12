@@ -50,18 +50,26 @@ const { title } = Astro.props;
 		& p {
 			color: rgba(50,50,50);
 		}
-		& img.icon {
+		& svg.icon {
+			width: 20px;
+			height: 20px;
 			fill: rgba(50,50,50);
+		}
+		& a {
+			border: 1px solid rgba(50,50,50);
 		}
 		&.dark {
 			color: rgba(240,240,240);
 			background-color: rgba(32,32,32);
 
 			& p {
-			color: rgba(220,220,220);
+				color: rgba(220,220,220);
 			}
-			& img.icon {
-			fill: rgba(220,220,220);
+			& svg.icon {
+				fill: rgba(220,220,220);
+			}
+			& a {
+				border: 1px solid rgba(220,220,220);
 			}
 		}
 	}

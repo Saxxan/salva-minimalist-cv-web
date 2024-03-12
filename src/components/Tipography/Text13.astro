@@ -6,7 +6,7 @@ interface Props {
 
 const { text, marginBottom } = Astro.props;
 
-const margenInferior = marginBottom !== undefined ? `${marginBottom}px` : '5px';
+const margenInferior = marginBottom !== undefined ? `${marginBottom}px` : '8px';
 ---
 
 <p style=`margin-bottom: ${margenInferior}`>
@@ -15,7 +15,7 @@ const margenInferior = marginBottom !== undefined ? `${marginBottom}px` : '5px';
 
 <style>
     p {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 300;
         margin-top: 0;
     }

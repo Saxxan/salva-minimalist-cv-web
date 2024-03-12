@@ -1,0 +1,15 @@
+---
+// Data
+import { basics } from '@cv';
+
+// Tipography
+import TitleH2 from "@/components/Tipography/TitleH2.astro";
+import Text15 from "@/components/Tipography/Text15.astro";
+
+const { summary } = basics;
+---
+
+<section>
+    <TitleH2 title="About" />
+    <Text15 text={summary} marginBottom={0} />
+</section>
