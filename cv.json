@@ -6,7 +6,7 @@
         "email": "salva.pucheibanez@gmail.com",
         "phone": "",
         "url": "",
-        "summary": "About description",
+        "summary": "Meticulous Frontend web developer. Responsive and accessible web design, mobile-first and clean code passionate person. Frontend developer and UX/UI designer certificate by ESAT. Always trying to improve design and develop skills.",
         "location": {
             "address": "",
             "postalCode": "46021",
@@ -29,27 +29,25 @@
     },
     "work": [
         {
-            "name": "Company",
-            "position": "President",
-            "url": "https://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description…",
+            "name": "Memorándum Multimedia",
+            "position": "Frontend Developer",
+            "url": "https://memorandum.net/",
+            "startDate": "2023",
+            "endDate": "Present",
+            "summary": "Design and develop responsive, accesible and usable UI/UX for web applications and products. Using Semanthic HTML, CSS, Sass, Tailwind, Bootstrap, JavaScript and ReactJS.",
             "highlights": [
-                "Started the company"
+                ""
             ]
-        }
-    ],
-    "volunteer": [
+        },
         {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "url": "https://organization.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Description…",
+            "name": "Gilytics AG",
+            "position": "Junior Frontend Developer",
+            "url": "https://www.gilytics.com/",
+            "startDate": "2022",
+            "endDate": "2023",
+            "summary": "Develop and maintain the UI of the Gilytics product, Pathfinder. Worked with the team to improve and develop new features and componentes with React functional components, hooks and HTTP requests. Styling with MaterialUI.",
             "highlights": [
-                "Awarded 'Volunteer of the Month'"
+                ""
             ]
         }
     ],
@@ -92,21 +90,108 @@
             "summary": "Description…"
         }
     ],
-    "skills": [
-        {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
-        }
-    ],
+    "skills": {
+        "developSkills": [
+            {
+                "name": "HTML",
+                "level": "Master"
+            },
+            {
+                "name": "CSS",
+                "level": "Master"
+            },
+            {
+                "name": "Sass",
+                "level": "Master"
+            },
+            {
+                "name": "Tailwind",
+                "level": "Master"
+            },
+            {
+                "name": "Bootstrap",
+                "level": "Master"
+            },
+            {
+                "name": "JavaScript",
+                "level": "Master"
+            },
+            {
+                "name": "ReactJS",
+                "level": "Master"
+            },
+            {
+                "name": "NextJS",
+                "level": "Master"
+            },
+            {
+                "name": "Astro",
+                "level": "Master"
+            },
+            {
+                "name": "Git",
+                "level": "Master"
+            },
+            {
+                "name": "Figma",
+                "level": "Master"
+            }
+        ],
+        "softSkills": [
+            {
+                "name": "HTML",
+                "level": "Master"
+            },
+            {
+                "name": "CSS",
+                "level": "Master"
+            },
+            {
+                "name": "Sass",
+                "level": "Master"
+            },
+            {
+                "name": "Tailwind",
+                "level": "Master"
+            },
+            {
+                "name": "Bootstrap",
+                "level": "Master"
+            },
+            {
+                "name": "JavaScript",
+                "level": "Master"
+            },
+            {
+                "name": "ReactJS",
+                "level": "Master"
+            },
+            {
+                "name": "NextJS",
+                "level": "Master"
+            },
+            {
+                "name": "Astro",
+                "level": "Master"
+            },
+            {
+                "name": "Git",
+                "level": "Master"
+            },
+            {
+                "name": "Figma",
+                "level": "Master"
+            }
+        ]
+    },
     "languages": [
         {
+            "language": "Spanish",
+            "fluency": "Nativek"
+        },
+        {
             "language": "English",
-            "fluency": "Native speaker"
+            "fluency": "Intermediate"
         }
     ],
     "interests": [

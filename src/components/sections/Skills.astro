@@ -1,9 +1,65 @@
 ---
+// Data
+import { skills } from '@cv';
 
-// Tipography
-import TitleH2 from '@/components/Tipography/TitleH2.astro';
+// Typography
+import TitleH2 from '@/components/Typography/TitleH2.astro';
+import TitleH3 from '../Typography/TitleH3.astro';
+import ColumnCardsWrapper from '../ui/ColumnCardsWrapper.astro';
+
+const { developSkills, softSkills } = skills;
 ---
 
 <section>
     <TitleH2 title="Skills" />
+    <ColumnCardsWrapper>
+        <li class="skills-section">
+            <TitleH3 title="Develop Skills" />
+            <ul class="skills-list">
+                {developSkills.map((skill, index) => (
+                    <li class="develop-skills" key={index}>{skill.name}</li>
+                ))}
+            </ul>
+        </li>
+        <li class="skills-section">
+            <TitleH3 title="Soft Skills" />
+            <ul class="skills-list">
+                {softSkills.map((skill, index) => (
+                    <li class="soft-skills" key={index}>{skill.name}</li>
+                ))}
+            </ul>
+        </li>
+    </ColumnCardsWrapper>
 </section>
+
+<style lang="scss">
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .skills-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        & li {
+            
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: white;
+            text-align: center;
+
+            &.develop-skills {
+                background-color: rgb(180, 80, 80);
+            }
+
+            &.soft-skills {
+                background-color: rgb(80, 80, 180);
+            }
+        }
+    }
+</style>

@@ -1,9 +1,18 @@
 ---
+// Data
+import { work } from '@cv';
 
-// Tipography
-import TitleH2 from '@/components/Tipography/TitleH2.astro';
+// Typography
+import TitleH2 from '@/components/Typography/TitleH2.astro';
+
+// UI
+import JobCard from '../ui/JobCard.astro';
+import ColumnCardsWrapper from '../ui/ColumnCardsWrapper.astro';
 ---
 
 <section>
     <TitleH2 title="Work experience" />
+    <ColumnCardsWrapper>
+        {work.map((job) => <JobCard name={job.name} position={job.position} url={job.url} start={job.startDate} end={job.endDate} summary={job.summary} />)}
+    </ColumnCardsWrapper>
 </section>

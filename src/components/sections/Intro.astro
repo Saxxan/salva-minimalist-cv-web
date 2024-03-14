@@ -2,10 +2,10 @@
 // Data
 import { basics } from '@cv';
 
-// Tipography
-import TitleH1 from '@/components/Tipography/TitleH1.astro';
-import Text15 from '@/components/Tipography/Text15.astro';
-import Text13 from '@/components/Tipography/Text13.astro';
+// Typography
+import TitleH1 from '@/components/Typography/TitleH1.astro';
+import Text15 from '@/components/Typography/Text15.astro';
+import Text13 from '@/components/Typography/Text13.astro';
 
 const {name, label, image, email, location, profiles} = basics;
 ---
@@ -81,12 +81,7 @@ const {name, label, image, email, location, profiles} = basics;
                         width: 30px;
                         height: 30px;
                         border-radius: 5px;
-                        transition: transform .4s ease-out;
                         cursor: pointer;
-
-                        &:hover {
-                            transform: scale(1.05);
-                        }
                     }
                 }
             }
