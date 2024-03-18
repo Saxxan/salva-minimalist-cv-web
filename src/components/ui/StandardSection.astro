@@ -1,0 +1,11 @@
+---
+// Typography
+import TitleH2 from '@/components/Typography/TitleH2.astro';
+
+const { title } = Astro.props;
+---
+
+<section>
+    {title && <TitleH2 title={title} />}
+    <slot />
+</section>

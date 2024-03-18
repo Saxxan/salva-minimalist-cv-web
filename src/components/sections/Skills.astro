@@ -2,22 +2,23 @@
 // Data
 import { skills } from '@cv';
 
+// UI
+import StandardSection from '@/components/ui/StandardSection.astro';
+
 // Typography
-import TitleH2 from '@/components/Typography/TitleH2.astro';
 import TitleH3 from '../Typography/TitleH3.astro';
 import ColumnCardsWrapper from '../ui/ColumnCardsWrapper.astro';
 
 const { developSkills, softSkills } = skills;
 ---
 
-<section>
-    <TitleH2 title="Skills" />
+<StandardSection title="Skills">
     <ColumnCardsWrapper>
         <li class="skills-section">
             <TitleH3 title="Develop Skills" />
             <ul class="skills-list">
                 {developSkills.map((skill, index) => (
-                    <li class="develop-skills" key={index}>{skill.name}</li>
+                    <li class="develop-skills">{skill.name}</li>
                 ))}
             </ul>
         </li>
@@ -25,12 +26,12 @@ const { developSkills, softSkills } = skills;
             <TitleH3 title="Soft Skills" />
             <ul class="skills-list">
                 {softSkills.map((skill, index) => (
-                    <li class="soft-skills" key={index}>{skill.name}</li>
+                    <li class="soft-skills">{skill.name}</li>
                 ))}
             </ul>
         </li>
     </ColumnCardsWrapper>
-</section>
+</StandardSection>
 
 <style lang="scss">
     .skills-section {
