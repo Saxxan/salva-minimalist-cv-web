@@ -1,7 +1,28 @@
 ---
+// Data
+import { education } from "@cv";
 
 // UI
-import StandardSection from '@/components/ui/StandardSection.astro';
+import StandardSection from "@/components/ui/StandardSection.astro";
+import ColumnCardsWrapper from "../ui/ColumnCardsWrapper.astro";
+import JobCard from "../ui/JobCard.astro";
 ---
 
-<StandardSection title="Education"></StandardSection>
+<StandardSection title="Education">
+  <ColumnCardsWrapper>
+    {
+      education.map(
+        ({ institution, url, startDate, endDate, studyType, area }) => (
+          <JobCard
+            name={institution}
+            url={url}
+            start={startDate}
+            end={endDate}
+            position={studyType}
+            summary={area}
+          />
+        )
+      )
+    }
+  </ColumnCardsWrapper>
+</StandardSection>

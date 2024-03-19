@@ -1,0 +1,56 @@
+---
+// Typography
+import TitleH3 from "@/components/Typography/TitleH3.astro";
+import TitleH4 from "@/components/Typography/TitleH4.astro";
+import Text15 from "@/components/Typography/Text15.astro";
+
+const { name, description, url, roles, technologies } = Astro.props;
+const rol = roles.join(", ");
+---
+
+<article>
+  <a href={url}>
+    <TitleH3 title={name} marginBottom={5} />
+    
+    <TitleH4 title={rol} />
+    <Text15 text={description} />
+    <ul>
+      {technologies.map((tech: string) => <li>{tech}</li>)}
+    </ul>
+  </a>
+</article>
+
+<style>
+  article {
+    padding: 10px;
+    border: 1px solid var(--bg-2);
+    border-radius: 4px;
+
+    &:hover {
+        border-color: var(--text-light);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      border: 0;
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 3px 8px;
+          border-radius: 4px;
+          text-align: center;
+          background-color: var(--bg-2);
+          font-size: 13px;
+        }
+      }
+    }
+  }
+</style>

@@ -1,15 +1,26 @@
 ---
 // Data
-import { work } from '@cv';
+import { work } from "@cv";
 
 // UI
-import StandardSection from '@/components/ui/StandardSection.astro';
-import JobCard from '../ui/JobCard.astro';
-import ColumnCardsWrapper from '../ui/ColumnCardsWrapper.astro';
+import StandardSection from "@/components/ui/StandardSection.astro";
+import JobCard from "../ui/JobCard.astro";
+import ColumnCardsWrapper from "../ui/ColumnCardsWrapper.astro";
 ---
 
 <StandardSection title="Experience">
-    <ColumnCardsWrapper>
-        {work.map((job) => <JobCard name={job.name} position={job.position} url={job.url} start={job.startDate} end={job.endDate} summary={job.summary} />)}
-    </ColumnCardsWrapper>
+  <ColumnCardsWrapper>
+    {
+      work.map(({ name, position, url, startDate, endDate, summary }) => (
+        <JobCard
+          name={name}
+          position={position}
+          url={url}
+          start={startDate}
+          end={endDate}
+          summary={summary}
+        />
+      ))
+    }
+  </ColumnCardsWrapper>
 </StandardSection>

@@ -1,11 +1,11 @@
 ---
 interface Props {
-    name: string;
-    position: string;
-    url: string;
-    start: string;
-    end: string;
-    summary: string;
+  name: string;
+  position: string;
+  url: string;
+  start: string;
+  end: string;
+  summary: string;
 }
 
 // Typography
@@ -13,38 +13,37 @@ import TitleH3 from "@/components/Typography/TitleH3.astro";
 import Text15 from "../Typography/Text15.astro";
 import Text13 from "../Typography/Text13.astro";
 import TitleH4 from "../Typography/TitleH4.astro";
-import { getTypeParameterOwner } from "typescript";
 
 const { name, position, url, start, end, summary } = Astro.props;
 const date = `${start} - ${end}`;
 ---
 
 <article>
-    <header>
-        <a href={url}><TitleH3 title={name}/></a>
-        <Text15 text={date} marginBottom={0}/>
-    </header>
-    <TitleH4 title={position} />
-    <Text13 text={summary} marginBottom={0}/>
+  <header>
+    <a href={url}><TitleH3 title={name} /></a>
+    <Text15 text={date} marginBottom={0} />
+  </header>
+  {position && <TitleH4 title={position} />}
+  <Text13 text={summary} marginBottom={0} />
 </article>
 
 <style lang="scss">
-    article {
-        & header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 5px;
+  article {
+    & header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
 
-            & a {
-                text-decoration: none;
-                color: inherit;
-                border: unset;
+      & a {
+        text-decoration: none;
+        color: inherit;
+        border: unset;
 
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+        &:hover {
+          text-decoration: underline;
         }
+      }
     }
+  }
 </style>

@@ -1,224 +1,302 @@
 {
-    "basics": {
-        "name": "Salvador Puche Ibáñez",
-        "label": "Frontend Developer focused on creating responsive, accesible and usable UI/UX.",
-        "image": "",
-        "email": "salva.pucheibanez@gmail.com",
-        "phone": "",
-        "url": "",
-        "summary": "Meticulous Frontend web developer. Responsive and accessible web design, mobile-first and clean code passionate person. Frontend developer and UX/UI designer certificate by ESAT. Always trying to improve design and develop skills.",
-        "location": {
-            "address": "",
-            "postalCode": "46021",
-            "city": "Valencia",
-            "countryCode": "ES",
-            "region": "España"
-        },
-        "profiles": [
-            {
-                "network": "Github",
-                "username": "Saxxan",
-                "url": "https://github.com/Saxxan"
-            },
-            {
-                "network": "LinkedIn",
-                "username": "Salvador Puche Ibáñez",
-                "url": "https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/"
-            }
-        ]
+  "basics": {
+    "name": "Salvador Puche Ibáñez",
+    "label": "Frontend Developer focused on creating responsive, accessible and usable UI/UX.",
+    "image": "",
+    "email": "salva.pucheibanez@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "Meticulous Frontend web developer. Responsive and accessible web design, mobile-first and clean code passionate person. Frontend developer and UX/UI designer certificate by ESAT. Always trying to improve design and develop skills.",
+    "location": {
+      "address": "",
+      "postalCode": "46021",
+      "city": "Valencia",
+      "countryCode": "ES",
+      "region": "España"
     },
-    "work": [
-        {
-            "name": "Memorándum Multimedia",
-            "position": "Frontend Developer",
-            "url": "https://memorandum.net/",
-            "startDate": "2023",
-            "endDate": "Present",
-            "summary": "Design and develop responsive, accesible and usable UI/UX for web applications and products. Using Semanthic HTML, CSS, Sass, Tailwind, Bootstrap, JavaScript and ReactJS.",
-            "highlights": [
-                ""
-            ]
-        },
-        {
-            "name": "Gilytics AG",
-            "position": "Junior Frontend Developer",
-            "url": "https://www.gilytics.com/",
-            "startDate": "2022",
-            "endDate": "2023",
-            "summary": "Develop and maintain the UI of the Gilytics product, Pathfinder. Worked with the team to improve and develop new features and componentes with React functional components, hooks and HTTP requests. Styling with MaterialUI.",
-            "highlights": [
-                ""
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "University",
-            "url": "https://institution.com/",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "score": "4.0",
-            "courses": [
-                "DB1101 - Basic SQL"
-            ]
-        }
-    ],
-    "awards": [
-        {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
-        }
-    ],
-    "certificates": [
-        {
-            "name": "Certificate",
-            "date": "2021-11-07",
-            "issuer": "Company",
-            "url": "https://certificate.com"
-        }
-    ],
-    "publications": [
-        {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "url": "https://publication.com",
-            "summary": "Description…"
-        }
-    ],
-    "skills": {
-        "developSkills": [
-            {
-                "name": "HTML",
-                "level": "Master"
-            },
-            {
-                "name": "CSS",
-                "level": "Master"
-            },
-            {
-                "name": "Sass",
-                "level": "Master"
-            },
-            {
-                "name": "Tailwind",
-                "level": "Master"
-            },
-            {
-                "name": "Bootstrap",
-                "level": "Master"
-            },
-            {
-                "name": "JavaScript",
-                "level": "Master"
-            },
-            {
-                "name": "ReactJS",
-                "level": "Master"
-            },
-            {
-                "name": "NextJS",
-                "level": "Master"
-            },
-            {
-                "name": "Astro",
-                "level": "Master"
-            },
-            {
-                "name": "Git",
-                "level": "Master"
-            },
-            {
-                "name": "Figma",
-                "level": "Master"
-            }
-        ],
-        "softSkills": [
-            {
-                "name": "HTML",
-                "level": "Master"
-            },
-            {
-                "name": "CSS",
-                "level": "Master"
-            },
-            {
-                "name": "Sass",
-                "level": "Master"
-            },
-            {
-                "name": "Tailwind",
-                "level": "Master"
-            },
-            {
-                "name": "Bootstrap",
-                "level": "Master"
-            },
-            {
-                "name": "JavaScript",
-                "level": "Master"
-            },
-            {
-                "name": "ReactJS",
-                "level": "Master"
-            },
-            {
-                "name": "NextJS",
-                "level": "Master"
-            },
-            {
-                "name": "Astro",
-                "level": "Master"
-            },
-            {
-                "name": "Git",
-                "level": "Master"
-            },
-            {
-                "name": "Figma",
-                "level": "Master"
-            }
-        ]
-    },
-    "languages": [
-        {
-            "language": "Spanish",
-            "fluency": "Nativek"
-        },
-        {
-            "language": "English",
-            "fluency": "Intermediate"
-        }
-    ],
-    "interests": [
-        {
-            "name": "Wildlife",
-            "keywords": [
-                "Ferrets",
-                "Unicorns"
-            ]
-        }
-    ],
-    "references": [
-        {
-            "name": "Jane Doe",
-            "reference": "Reference…"
-        }
-    ],
-    "projects": [
-        {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
-            "description": "Description...",
-            "highlights": [
-                "Won award at AIHacks 2016"
-            ],
-            "url": "https://project.com/"
-        }
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "Saxxan",
+        "url": "https://github.com/Saxxan"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Salvador Puche Ibáñez",
+        "url": "https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/"
+      }
     ]
+  },
+  "work": [
+    {
+      "name": "Memorándum Multimedia",
+      "position": "Frontend Developer",
+      "url": "https://memorandum.net/",
+      "startDate": "2023",
+      "endDate": "Present",
+      "summary": "Design and develop responsive, accessible and usable UI/UX for web applications and products. Using Semanthic HTML, CSS, Sass, Tailwind, Bootstrap, JavaScript and ReactJS.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Gilytics AG",
+      "position": "Junior Frontend Developer",
+      "url": "https://www.gilytics.com/",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Develop and maintain the UI of the Gilytics product, Pathfinder. Worked with the team to improve and develop new features and componentes with React functional components, hooks and HTTP requests. Styling with MaterialUI.",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESAT Escuela Superior de Arte y Tecnología",
+      "url": "https://www.esat.es/",
+      "area": "UX/UI Design, Frontend Development and Digital Marketing",
+      "studyType": "Master's degree",
+      "startDate": "2021",
+      "endDate": "2022",
+      "score": "",
+      "courses": [
+        ""
+      ]
+    },
+    {
+      "institution": "UPV Universitat Politècnica de València",
+      "url": "https://www.upv.es/",
+      "area": "Electronic and Informatic Industrial Engineer",
+      "studyType": "Bachelor",
+      "startDate": "2015",
+      "endDate": "2020",
+      "score": "",
+      "courses": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
+  ],
+  "skills": {
+    "developSkills": [
+      {
+        "name": "HTML",
+        "level": "Master"
+      },
+      {
+        "name": "CSS",
+        "level": "Master"
+      },
+      {
+        "name": "Sass",
+        "level": "Master"
+      },
+      {
+        "name": "Tailwind",
+        "level": "Master"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Master"
+      },
+      {
+        "name": "styled-components",
+        "level": "Master"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Master"
+      },
+      {
+        "name": "ReactJS",
+        "level": "Master"
+      },
+      {
+        "name": "NextJS",
+        "level": "Master"
+      },
+      {
+        "name": "Astro",
+        "level": "Master"
+      },
+      {
+        "name": "Git",
+        "level": "Master"
+      },
+      {
+        "name": "Scrum",
+        "level": "Master"
+      },
+      {
+        "name": "Jira",
+        "level": "Master"
+      },
+      {
+        "name": "Figma",
+        "level": "Master"
+      }
+    ],
+    "softSkills": [
+      {
+        "name": "Resilience",
+        "level": "Master"
+      },
+      {
+        "name": "Critical thinking",
+        "level": "Master"
+      },
+      {
+        "name": "Commitment",
+        "level": "Master"
+      },
+      {
+        "name": "Flexibility",
+        "level": "Master"
+      },
+      {
+        "name": "Teamwork",
+        "level": "Master"
+      },
+      {
+        "name": "Creativity",
+        "level": "Master"
+      },
+      {
+        "name": "Proactivity",
+        "level": "Master"
+      },
+      {
+        "name": "Thirst for knowledge",
+        "level": "Master"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Nativek"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "",
+      "endDate": "",
+      "description": "Description...",
+      "highlights": [
+        ""
+      ],
+      "url": "https://project.com/",
+      "roles": [
+        "Frontend Developer",
+        "Designer"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Project",
+      "startDate": "",
+      "endDate": "",
+      "description": "Description...",
+      "highlights": [
+        ""
+      ],
+      "url": "https://project.com/",
+      "roles": [
+        "Frontend Developer",
+        "Designer"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Project",
+      "startDate": "",
+      "endDate": "",
+      "description": "Description...",
+      "highlights": [
+        ""
+      ],
+      "url": "https://project.com/",
+      "roles": [
+        "Frontend Developer",
+        "Designer"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Project",
+      "startDate": "",
+      "endDate": "",
+      "description": "Description...",
+      "highlights": [
+        ""
+      ],
+      "url": "https://project.com/",
+      "roles": [
+        "Frontend Developer",
+        "Designer"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ]
 }

@@ -1,11 +1,11 @@
 ---
-import Header from '@/components/Header.astro';
+import Header from "@/components/Header.astro";
 
 // Fonts
-import '@fontsource-variable/roboto-mono';
+import "@fontsource-variable/roboto-mono";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -13,68 +13,79 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<title>{title}</title>
-	</head>
-	<body>
-		<Header />
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
 </html>
 
-<style lang="scss" is:global>	
-	*, *::before, *::after {
-		box-sizing: border-box;
-		min-width: 0;
-		font: inherit;
-		transition: color 0.4s ease-out;
-		transition: background-color 0.4s ease-out;
-	}
-	html {
-		font-family: 'Roboto Mono Variable', monospace;
-		letter-spacing: -0.025em;
-	}
-	body {
-		margin: 0;
-		min-height: 100dvh;
-		background-color: rgba(255,255,255);
-		color: rgba(32,32,32);
-		& p {
-			color: rgba(50,50,50);
-		}
-		& svg.icon {
-			width: 20px;
-			height: 20px;
-			fill: rgba(50,50,50);
-		}
-		& a {
-			border: 1px solid rgba(50,50,50);
-		}
-		&.dark {
-			color: rgba(255,255,255);
-			background-color: rgba(32,32,32);
+<style lang="scss" is:global>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    min-width: 0;
+    font: inherit;
+    transition: color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+  }
+  html {
+    font-family: "Roboto Mono Variable", monospace;
+    letter-spacing: -0.025em;
+  }
+  body {
+    --bg: rgba(255, 255, 255);
+    --text: rgba(32, 32, 32);
+    --text-light: rgba(50, 50, 50);
+    --bg-2: rgba(220, 220, 220);
+    --red: rgb(180, 80, 80);
+    --purple: rgb(80, 80, 180);
 
-			& p {
-				color: rgba(220,220,220);
-			}
-			& svg.icon {
-				fill: rgba(220,220,220);
-			}
-			& a {
-				border: 1px solid rgba(220,220,220);
-			}
-		}
-	}
-	h1, h2, h3, h4, h5, h6 {
-		text-wrap: balance;
-	}
-	p {
-		text-wrap: pretty;
-	}
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--bg);
+    color: var(--text);
+    & p {
+      color: var(--text-light);
+    }
+    & svg.icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--text-light);
+    }
+    & a {
+      border: 1px solid var(--text-light);
+    }
+    &.dark {
+      --bg: rgba(32, 32, 32);
+      --text: rgba(255, 255, 255);
+      --text-light: rgba(220, 220, 220);
+      --bg-2: rgba(50, 50, 50);
+      --red: rgb(206, 91, 91);
+      --purple: rgb(91, 91, 202);
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
 </style>

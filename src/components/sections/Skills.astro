@@ -1,66 +1,69 @@
 ---
 // Data
-import { skills } from '@cv';
+import { skills } from "@cv";
 
 // UI
-import StandardSection from '@/components/ui/StandardSection.astro';
+import StandardSection from "@/components/ui/StandardSection.astro";
 
 // Typography
-import TitleH3 from '../Typography/TitleH3.astro';
-import ColumnCardsWrapper from '../ui/ColumnCardsWrapper.astro';
+import TitleH3 from "../Typography/TitleH3.astro";
+import ColumnCardsWrapper from "../ui/ColumnCardsWrapper.astro";
 
 const { developSkills, softSkills } = skills;
 ---
 
 <StandardSection title="Skills">
-    <ColumnCardsWrapper>
-        <li class="skills-section">
-            <TitleH3 title="Develop Skills" />
-            <ul class="skills-list">
-                {developSkills.map((skill, index) => (
-                    <li class="develop-skills">{skill.name}</li>
-                ))}
-            </ul>
-        </li>
-        <li class="skills-section">
-            <TitleH3 title="Soft Skills" />
-            <ul class="skills-list">
-                {softSkills.map((skill, index) => (
-                    <li class="soft-skills">{skill.name}</li>
-                ))}
-            </ul>
-        </li>
-    </ColumnCardsWrapper>
+  <ColumnCardsWrapper>
+    <li class="skills-section">
+      <TitleH3 title="Develop Skills" />
+      <ul class="skills-list">
+        {
+          developSkills.map((skill, index) => (
+            <li class="develop-skills">{skill.name}</li>
+          ))
+        }
+      </ul>
+    </li>
+    <li class="skills-section">
+      <TitleH3 title="Soft Skills" />
+      <ul class="skills-list">
+        {
+          softSkills.map((skill, index) => (
+            <li class="soft-skills">{skill.name}</li>
+          ))
+        }
+      </ul>
+    </li>
+  </ColumnCardsWrapper>
 </StandardSection>
 
 <style lang="scss">
-    .skills-section {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    & li {
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: white;
+      text-align: center;
+
+      &.develop-skills {
+        background-color: var(--red);
+      }
+
+      &.soft-skills {
+        background-color: var(--purple);
+      }
     }
-    .skills-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-
-        & li {
-            
-            padding: 3px 8px;
-            border-radius: 4px;
-            color: white;
-            text-align: center;
-
-            &.develop-skills {
-                background-color: rgb(180, 80, 80);
-            }
-
-            &.soft-skills {
-                background-color: rgb(80, 80, 180);
-            }
-        }
-    }
+  }
 </style>
