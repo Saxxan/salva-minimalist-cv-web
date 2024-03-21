@@ -13,5 +13,9 @@ import ThemeSwitch from "@/components/ui/ThemeSwitch.astro";
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 12px 1rem;
+
+    @media print {
+      display: none;
+    }
   }
 </style>

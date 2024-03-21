@@ -223,79 +223,128 @@
   ],
   "projects": [
     {
-      "name": "Project",
+      "name": "Portfolio Iris Galcerà",
       "startDate": "",
       "endDate": "",
-      "description": "Description...",
+      "description": "Portfolio website width dashboard to manage projects and Firestore DB.",
       "highlights": [
         ""
       ],
-      "url": "https://project.com/",
+      "url": "https://github.com/Saxxan/iris-galcera",
       "roles": [
-        "Frontend Developer",
-        "Designer"
+        "Designer",
+        "Frontend Developer"
       ],
       "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "ReactJS",
+        "styled-components"
       ]
     },
     {
-      "name": "Project",
+      "name": "Pathfinder",
       "startDate": "",
       "endDate": "",
-      "description": "Description...",
+      "description": "The Gilytics company Product. A platform to manage and analyze geospatial data.",
       "highlights": [
         ""
       ],
-      "url": "https://project.com/",
+      "url": "https://www.gilytics.com/pathfinder-platform",
       "roles": [
-        "Frontend Developer",
-        "Designer"
+        "Frontend Developer"
       ],
       "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "ReactJS",
+        "MaterialUI"
       ]
     },
     {
-      "name": "Project",
+      "name": "Minimalist CV website",
       "startDate": "",
       "endDate": "",
-      "description": "Description...",
+      "description": "Personal minimalist CV website inspired by Bartosz Jarocki CV website.",
       "highlights": [
         ""
       ],
-      "url": "https://project.com/",
+      "url": "https://github.com/Saxxan/salva-minimalist-cv-web",
       "roles": [
-        "Frontend Developer",
-        "Designer"
+        "Frontend Developer"
       ],
       "technologies": [
         "HTML",
-        "CSS",
-        "JavaScript"
+        "ASTRO",
+        "SCSS"
       ]
     },
     {
-      "name": "Project",
+      "name": "Portfolio",
       "startDate": "",
       "endDate": "",
-      "description": "Description...",
+      "description": "Personal portfolio website with ReactJS and styled-components.",
       "highlights": [
         ""
       ],
-      "url": "https://project.com/",
+      "url": "https://github.com/Saxxan/portfolio",
+      "roles": [
+        "Designer",
+        "Frontend Developer"
+      ],
+      "technologies": [
+        "ReactJS",
+        "styled-components"
+      ]
+    },
+    {
+      "name": "GoDog",
+      "startDate": "",
+      "endDate": "",
+      "description": "Web application to connect dog owners with dog walkers.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/GoDog",
+      "roles": [
+        "Designer",
+        "Frontend Developer"
+      ],
+      "technologies": [
+        "HTML",
+        "SCSS"
+      ]
+    },
+    {
+      "name": "ToDo List App",
+      "startDate": "",
+      "endDate": "",
+      "description": "UI Interface for a ToDo List App with NextJS and SCSS.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/todolist",
       "roles": [
         "Frontend Developer",
         "Designer"
       ],
       "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "NextJS",
+        "SCSS"
+      ]
+    },
+    {
+      "name": "ToDo List App",
+      "startDate": "",
+      "endDate": "",
+      "description": "UI Interface for a ToDo List App with Vite, ReactJS and TypeScript",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/todo-list-app-ts",
+      "roles": [
+        "Frontend Developer"
+      ],
+      "technologies": [
+        "Vite",
+        "ReactJS",
+        "TypeScript"
       ]
     }
   ]

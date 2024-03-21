@@ -4,6 +4,9 @@ import Header from "@/components/Header.astro";
 // Fonts
 import "@fontsource-variable/roboto-mono";
 
+// Dependencies
+import { Tooltips } from "astro-tooltips";
+
 interface Props {
   title: string;
 }
@@ -23,69 +26,91 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <Tooltips interactive={false} delay={[15, 25]} />
     <title>{title}</title>
   </head>
   <body>
     <Header />
     <slot />
+    <style lang="scss" is:global>
+      @mixin colors($theme) {
+        @if $theme == "light" {
+          --bg: rgba(255, 255, 255);
+          --text: rgba(32, 32, 32);
+          --text-light: rgba(50, 50, 50);
+          --bg-2: rgba(220, 220, 220);
+          --red: rgb(180, 80, 80);
+          --purple: rgb(80, 80, 180);
+        }
+        @elseif $theme == "print" {
+          --bg: rgba(255, 255, 255) !important;
+          --text: rgba(0, 0, 0) !important;
+          --text-light: rgba(50, 50, 50) !important;
+          --bg-2: rgba(220, 220, 220) !important;
+          --red: rgb(180, 80, 80) !important;
+          --purple: rgb(80, 80, 180) !important;
+        } @else {
+          --bg: rgba(32, 32, 32);
+          --text: rgba(255, 255, 255);
+          --text-light: rgba(220, 220, 220);
+          --bg-2: rgba(50, 50, 50);
+          --red: rgb(206, 91, 91);
+          --purple: rgb(91, 91, 202);
+        }
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        min-width: 0;
+        font: inherit;
+        transition: color 0.4s ease-out;
+        transition: background-color 0.4s ease-out;
+      }
+      html {
+        font-family: "Roboto Mono Variable", monospace;
+        letter-spacing: -0.025em;
+      }
+      body {
+        @include colors("light");
+        margin: 0;
+        min-height: 100dvh;
+        background-color: var(--bg);
+        color: var(--text);
+        & p {
+          color: var(--text-light);
+        }
+        & svg.icon {
+          width: 20px;
+          height: 20px;
+          fill: var(--text-light);
+        }
+        & a, & button {
+          border: 1px solid var(--text-light);
+        }
+        &.dark {
+          @include colors("dark");
+        }
+
+        @media print {
+          @include colors("print");
+        }
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-wrap: balance;
+      }
+      p {
+        text-wrap: pretty;
+      }
+
+      @page {
+        margin-top: 70px;
+      }
+    </style>
   </body>
 </html>
-
-<style lang="scss" is:global>
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    min-width: 0;
-    font: inherit;
-    transition: color 0.4s ease-out;
-    transition: background-color 0.4s ease-out;
-  }
-  html {
-    font-family: "Roboto Mono Variable", monospace;
-    letter-spacing: -0.025em;
-  }
-  body {
-    --bg: rgba(255, 255, 255);
-    --text: rgba(32, 32, 32);
-    --text-light: rgba(50, 50, 50);
-    --bg-2: rgba(220, 220, 220);
-    --red: rgb(180, 80, 80);
-    --purple: rgb(80, 80, 180);
-
-    margin: 0;
-    min-height: 100dvh;
-    background-color: var(--bg);
-    color: var(--text);
-    & p {
-      color: var(--text-light);
-    }
-    & svg.icon {
-      width: 20px;
-      height: 20px;
-      fill: var(--text-light);
-    }
-    & a {
-      border: 1px solid var(--text-light);
-    }
-    &.dark {
-      --bg: rgba(32, 32, 32);
-      --text: rgba(255, 255, 255);
-      --text-light: rgba(220, 220, 220);
-      --bg-2: rgba(50, 50, 50);
-      --red: rgb(206, 91, 91);
-      --purple: rgb(91, 91, 202);
-    }
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-wrap: balance;
-  }
-  p {
-    text-wrap: pretty;
-  }
-</style>

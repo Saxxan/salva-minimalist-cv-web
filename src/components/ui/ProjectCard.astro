@@ -2,7 +2,7 @@
 // Typography
 import TitleH3 from "@/components/Typography/TitleH3.astro";
 import TitleH4 from "@/components/Typography/TitleH4.astro";
-import Text15 from "@/components/Typography/Text15.astro";
+import Text13 from "@/components/Typography/Text13.astro";
 
 const { name, description, url, roles, technologies } = Astro.props;
 const rol = roles.join(", ");
@@ -13,7 +13,7 @@ const rol = roles.join(", ");
     <TitleH3 title={name} marginBottom={5} />
     
     <TitleH4 title={rol} />
-    <Text15 text={description} />
+    <Text13 text={description} />
     <ul>
       {technologies.map((tech: string) => <li>{tech}</li>)}
     </ul>
