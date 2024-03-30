@@ -41,6 +41,7 @@ const { title } = Astro.props;
           --bg-2: rgba(220, 220, 220);
           --red: rgb(180, 80, 80);
           --purple: rgb(80, 80, 180);
+          --shadow: rgba(50, 50, 50, 0.2);
         }
         @elseif $theme == "print" {
           --bg: rgba(255, 255, 255) !important;
@@ -56,6 +57,7 @@ const { title } = Astro.props;
           --bg-2: rgba(50, 50, 50);
           --red: rgb(206, 91, 91);
           --purple: rgb(91, 91, 202);
+          --shadow: rgba(220, 220, 220, 0.2);
         }
       }
       *,
@@ -85,7 +87,8 @@ const { title } = Astro.props;
           height: 20px;
           fill: var(--text-light);
         }
-        & a, & button {
+        & a,
+        & button {
           border: 1px solid var(--text-light);
         }
         &.dark {

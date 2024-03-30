@@ -7,7 +7,7 @@ import TitleH1 from "@/components/Typography/TitleH1.astro";
 import Text15 from "@/components/Typography/Text15.astro";
 import Text13 from "@/components/Typography/Text13.astro";
 
-const { name, label, image, email, location, profiles } = basics;
+const { name, label, email, location, profiles } = basics;
 ---
 
 <section class="intro">
@@ -24,12 +24,14 @@ const { name, label, image, email, location, profiles } = basics;
     </section>
     <div class="contact-print">
       <Text13 text={email} />
+      <Text13 text="cv-salvador-puche.netlify.app" />
     </div>
     <ul class="intro_data_links">
       <li>
         <button
+          class="socialButton"
           onclick="navigator.clipboard.writeText('salva.pucheibanez@gmail.com')"
-          title="Copy email to clipboard"
+          title={profiles[0].tooltip}
           data-tooltip-placement="top"
           data-tooltip-interactive="false"
         >
@@ -47,7 +49,13 @@ const { name, label, image, email, location, profiles } = basics;
         </button>
       </li>
       <li>
-        <a href={profiles[0].url}>
+        <a
+          class="socialButton"
+          href={profiles[1].url}
+          title={profiles[1].tooltip}
+          data-tooltip-placement="top"
+          data-tooltip-interactive="false"
+        >
           <svg
             class="icon"
             width="24"
@@ -62,7 +70,13 @@ const { name, label, image, email, location, profiles } = basics;
         </a>
       </li>
       <li>
-        <a href={profiles[1].url}>
+        <a
+          class="socialButton"
+          href={profiles[2].url}
+          title={profiles[2].tooltip}
+          data-tooltip-placement="top"
+          data-tooltip-interactive="false"
+        >
           <svg
             class="icon"
             width="24"
@@ -78,8 +92,9 @@ const { name, label, image, email, location, profiles } = basics;
       </li>
       <li>
         <button
+          class="socialButton"
           onclick="window.print()"
-          title="Print CV"
+          title={profiles[3].tooltip}
           data-tooltip-placement="top"
           data-tooltip-interactive="false"
         >
@@ -98,7 +113,12 @@ const { name, label, image, email, location, profiles } = basics;
       </li>
     </ul>
   </div>
-  <div class="intro_img"></div>
+  <div class="intro_img">
+    <img
+      src="/public/profile.webp"
+      alt="Imagen de perfil de Salvador Puche Ibáñez"
+    />
+  </div>
 </section>
 
 <style lang="scss">
@@ -146,6 +166,50 @@ const { name, label, image, email, location, profiles } = basics;
             height: 30px;
             border-radius: 5px;
             cursor: pointer;
+
+            &.clicked {
+              animation: clickEffect 0.5s ease-in-out;
+            }
+
+            @keyframes clickEffect {
+              // 0% {
+              //   background-color: radial-gradient(
+              //     circle,
+              //     var(--text-light) 10%,
+              //     transparent
+              //   );
+              // }
+              // 25% {
+              //   background-color: radial-gradient(
+              //     circle,
+              //     transparent 10%,
+              //     var(--text-light) 30%,
+              //     transparent
+              //   );
+              // }
+              // 50% {
+              //   background-color: radial-gradient(
+              //     circle,
+              //     transparent 30%,
+              //     var(--text-light) 60%,
+              //     transparent
+              //   );
+              // }
+              // 50% {
+              //   background-color: radial-gradient(
+              //     circle,
+              //     transparent 60%,
+              //     var(--text-light) 100%
+              //   );
+              // }
+              // 100% {
+              //   background-color: radial-gradient(
+              //     circle,
+              //     transparent 100%,
+              //     var(--text-light) 0%
+              //   );
+              // }
+            }
           }
         }
 
@@ -156,9 +220,27 @@ const { name, label, image, email, location, profiles } = basics;
     }
 
     &_img {
-      border-radius: 10px;
-      width: 100px;
-      height: 100px;
+      width: 150px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
     }
   }
 </style>
+
+<script>
+  const socialButtons = document.querySelectorAll(".socialButton");
+
+  socialButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.add("clicked");
+    });
+    button.addEventListener("animationend", () => {
+      button.classList.remove("clicked");
+    });
+  });
+</script>

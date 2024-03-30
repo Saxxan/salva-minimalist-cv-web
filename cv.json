@@ -16,14 +16,28 @@
     },
     "profiles": [
       {
+        "network": "Email",
+        "username": "salva.pucheibanez",
+        "url": "salva.pucheibanez@gmail.com",
+        "tooltip": "Copy email to clipboard"
+      },
+      {
         "network": "Github",
         "username": "Saxxan",
-        "url": "https://github.com/Saxxan"
+        "url": "https://github.com/Saxxan",
+        "tooltip": "Go to Github profile"
       },
       {
         "network": "LinkedIn",
         "username": "Salvador Puche Ibáñez",
-        "url": "https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/"
+        "url": "https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/",
+        "tooltip": "Go to LinkedIn profile"
+      },
+      {
+        "network": "Print CV",
+        "username": "",
+        "url": "",
+        "tooltip": "Print/Download CV"
       }
     ]
   },
