@@ -14,6 +14,7 @@
     "@fontsource-variable/roboto-mono": "^5.0.18",
     "astro": "^4.4.9",
     "astro-tooltips": "^0.6.2",
+    "ninja-keys": "^1.2.2",
     "typescript": "^5.3.3"
   },
   "devDependencies": {

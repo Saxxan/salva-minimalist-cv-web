@@ -79,21 +79,11 @@
 </style>
 
 <script>
+  import { setTheme } from "@/utils/utils.js";
+
   const switchTheme = document.getElementById(
     "switch-theme",
   ) as HTMLInputElement;
-  const body = document.body as HTMLBodyElement;
-
-  /**
-   * Función para cambiar el tema de la web
-   */
-  function setTheme() {
-    if (switchTheme?.checked) {
-      body.classList.add("dark");
-    } else {
-      body.classList.remove("dark");
-    }
-  }
 
   switchTheme?.addEventListener("change", setTheme);
 </script>
