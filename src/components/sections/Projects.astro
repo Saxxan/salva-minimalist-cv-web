@@ -1,13 +1,13 @@
 ---
 // Data
-import { projects } from "@cv";
+import { projects } from "../../es/cv.json";
 
 // UI
-import StandardSection from "@/components/ui/StandardSection.astro";
-import ProjectCard from "@/components/ui/ProjectCard.astro";
+import StandardSection from "../ui/StandardSection.astro";
+import ProjectCard from "../ui/ProjectCard.astro";
 ---
 
-<StandardSection title="Projects">
+<StandardSection title="Proyectos">
     <ul class="projects-list">
         {projects.map(({name, description, url, roles, technologies}) => (
             <li>

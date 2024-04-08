@@ -1,0 +1,36 @@
+---
+// Data
+import { projects } from "../../../en/cv.json";
+
+// UI
+import StandardSection from "../../ui/StandardSection.astro";
+import ProjectCard from "../../ui/ProjectCard.astro";
+---
+
+<StandardSection title="Projects">
+  <ul class="projects-list">
+    {
+      projects.map(({ name, description, url, roles, technologies }) => (
+        <li>
+          <ProjectCard
+            name={name}
+            description={description}
+            url={url}
+            roles={roles}
+            technologies={technologies}
+          />
+        </li>
+      ))
+    }
+  </ul>
+</StandardSection>
+
+<style>
+  .projects-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 0;
+  }
+</style>

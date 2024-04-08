@@ -1,0 +1,365 @@
+{
+  "basics": {
+    "name": "Salvador Puche Ibáñez",
+    "label": "Desarrollador Frontend y Diseñador UX/UI. Creando webs y experiencias intuitivas, accesibles y limpias.",
+    "image": "",
+    "email": "salva.pucheibanez@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "Desarrollador de diseños responsive y accesibles. Prioridad a los diseños mobile fist y a las mejores prácticas de código limpio. Desarrollador Frontend y diseñador UX/UI por ESAT.  Siempre en constante aprendizaje para mejorar mis habilidades de diseño y desarrollo.",
+    "location": {
+      "address": "",
+      "postalCode": "46021",
+      "city": "Valencia",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "Email",
+        "username": "salva.pucheibanez",
+        "url": "salva.pucheibanez@gmail.com",
+        "tooltip": "Copia el email en el portapapeles"
+      },
+      {
+        "network": "Github",
+        "username": "Saxxan",
+        "url": "https://github.com/Saxxan",
+        "tooltip": "Ir al perfil de Github"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Salvador Puche Ibáñez",
+        "url": "https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/",
+        "tooltip": "Ir al perfil de LinkedIn"
+      },
+      {
+        "network": "Print CV",
+        "username": "",
+        "url": "",
+        "tooltip": "Imprimir/Descargar el CV"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Memorándum Multimedia",
+      "position": "Desarrollador Frontend",
+      "url": "https://memorandum.net/",
+      "startDate": "2023",
+      "endDate": "Actualidad",
+      "summary": "Diseño y desarrollo responsive, accesible e intuitivo UI/UX para aplicaciones y productos web. Utilizando HTML Semántico, CSS, Sass, Tailwind, Bootstrap, JavaScript y ReactJS.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Gilytics AG",
+      "position": "Desarrollador Frontend Junior",
+      "url": "https://www.gilytics.com/",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Desarrollo y mantenimiento de la interfaz de usuario del producto Gilytics, Pathfinder. Trabajé con el equipo para mejorar y desarrollar nuevas características con componentes funcionales de React, hooks y peticiones HTTP. Estilizado con MaterialUI.",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESAT Escuela Superior de Arte y Tecnología",
+      "url": "https://www.esat.es/",
+      "area": "Diseño UX/UI, Desarrollo Frontend y Marketing Digital",
+      "studyType": "Postgrado",
+      "startDate": "2021",
+      "endDate": "2022",
+      "score": "",
+      "courses": [
+        ""
+      ]
+    },
+    {
+      "institution": "UPV Universitat Politècnica de València",
+      "url": "https://www.upv.es/",
+      "area": "Ingeniería Electrónica Industrial y Automática",
+      "studyType": "Grado",
+      "startDate": "2015",
+      "endDate": "2020",
+      "score": "",
+      "courses": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "",
+      "date": "",
+      "issuer": "",
+      "url": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
+  ],
+  "skills": {
+    "developSkills": [
+      {
+        "name": "HTML",
+        "level": "Master"
+      },
+      {
+        "name": "CSS",
+        "level": "Master"
+      },
+      {
+        "name": "Sass",
+        "level": "Master"
+      },
+      {
+        "name": "Tailwind",
+        "level": "Master"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Master"
+      },
+      {
+        "name": "styled-components",
+        "level": "Master"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Master"
+      },
+      {
+        "name": "ReactJS",
+        "level": "Master"
+      },
+      {
+        "name": "NextJS",
+        "level": "Master"
+      },
+      {
+        "name": "Astro",
+        "level": "Master"
+      },
+      {
+        "name": "Git",
+        "level": "Master"
+      },
+      {
+        "name": "Scrum",
+        "level": "Master"
+      },
+      {
+        "name": "Jira",
+        "level": "Master"
+      },
+      {
+        "name": "Figma",
+        "level": "Master"
+      }
+    ],
+    "softSkills": [
+      {
+        "name": "Adaptabilidad",
+        "level": "Master"
+      },
+      {
+        "name": "Pensamiento crítico",
+        "level": "Master"
+      },
+      {
+        "name": "Compromiso",
+        "level": "Master"
+      },
+      {
+        "name": "Flexibilidad",
+        "level": "Master"
+      },
+      {
+        "name": "Trabajo en equipo",
+        "level": "Master"
+      },
+      {
+        "name": "Creatividad",
+        "level": "Master"
+      },
+      {
+        "name": "Proactividad",
+        "level": "Master"
+      },
+      {
+        "name": "Aprendizaje constante",
+        "level": "Master"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Castellano",
+      "fluency": "Nativek"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "keywords": [
+        "",
+        ""
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portfolio Iris Galcerà",
+      "startDate": "",
+      "endDate": "",
+      "description": "Portfolio web con posibilidad de gestionar proyectos y base de datos en Firestore.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/iris-galcera",
+      "roles": [
+        "Diseñador",
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "ReactJS",
+        "styled-components"
+      ]
+    },
+    {
+      "name": "Pathfinder",
+      "startDate": "",
+      "endDate": "",
+      "description": "Producto de la empresa Gilytics. Una plataforma para el procesamiento de datos GIS.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://www.gilytics.com/pathfinder-platform",
+      "roles": [
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "ReactJS",
+        "MaterialUI"
+      ]
+    },
+    {
+      "name": "CV web minimalista",
+      "startDate": "",
+      "endDate": "",
+      "description": "CV web personal minimalista inspirado en la web de Bartosz Jarocki.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/salva-minimalist-cv-web",
+      "roles": [
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "HTML",
+        "ASTRO",
+        "SCSS"
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "startDate": "",
+      "endDate": "",
+      "description": "Portfolio personal con ReactJS y styled-components.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/portfolio",
+      "roles": [
+        "Diseñador",
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "ReactJS",
+        "styled-components"
+      ]
+    },
+    {
+      "name": "GoDog",
+      "startDate": "",
+      "endDate": "",
+      "description": "UI de una aplicación web que conecta dueños de perros con paseadores de perros.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/GoDog",
+      "roles": [
+        "Diseñador",
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "HTML",
+        "SCSS"
+      ]
+    },
+    {
+      "name": "ToDo List App",
+      "startDate": "",
+      "endDate": "",
+      "description": "UI para una aplicación de lista de tareas con NextJS y SCSS.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/todolist",
+      "roles": [
+        "Diseñador",
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "NextJS",
+        "SCSS"
+      ]
+    },
+    {
+      "name": "ToDo List App",
+      "startDate": "",
+      "endDate": "",
+      "description": "Interfaz de usuario para una aplicación de lista de tareas con Vite, ReactJS y TypeScript.",
+      "highlights": [
+        ""
+      ],
+      "url": "https://github.com/Saxxan/todo-list-app-ts",
+      "roles": [
+        "Desarrollador frontend"
+      ],
+      "technologies": [
+        "Vite",
+        "ReactJS",
+        "TypeScript"
+      ]
+    }
+  ]
+}

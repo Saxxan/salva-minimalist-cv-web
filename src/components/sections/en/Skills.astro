@@ -1,21 +1,21 @@
 ---
 // Data
-import { skills } from "../../es/cv.json";
+import { skills } from "../../../en/cv.json";
 
 // UI
-import StandardSection from "../ui/StandardSection.astro";
+import StandardSection from "../../ui/StandardSection.astro";
 
 // Typography
-import TitleH3 from "../Typography/TitleH3.astro";
-import ColumnCardsWrapper from "../ui/ColumnCardsWrapper.astro";
+import TitleH3 from "../../Typography/TitleH3.astro";
+import ColumnCardsWrapper from "../../ui/ColumnCardsWrapper.astro";
 
 const { developSkills, softSkills } = skills;
 ---
 
-<StandardSection title="Habilidades">
+<StandardSection title="Skills">
   <ColumnCardsWrapper>
     <li class="skills-section">
-      <TitleH3 title="Habilidades técnicas" />
+      <TitleH3 title="Develop Skills" />
       <ul class="skills-list">
         {
           developSkills.map((skill) => (
@@ -25,7 +25,7 @@ const { developSkills, softSkills } = skills;
       </ul>
     </li>
     <li class="skills-section">
-      <TitleH3 title="Habilidades sociales" />
+      <TitleH3 title="Soft Skills" />
       <ul class="skills-list">
         {
           softSkills.map((skill) => (

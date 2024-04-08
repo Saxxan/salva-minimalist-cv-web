@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Intro from "../../components/sections/en/Intro.astro";
+import About from "../../components/sections/en/About.astro";
+import Experience from "../../components/sections/en/Experience.astro";
+import Education from "../../components/sections/en/Education.astro";
+import Projects from "../../components/sections/en/Projects.astro";
+import Skills from "../../components/sections/en/Skills.astro";
+import KeyboardManager from "../../components/sections/en/KeyboardManager.astro";
+---
+
+<Layout title="Salvador Puche Ibáñez - CV">
+  <main>
+    <Intro />
+    <About />
+    <Experience />
+    <Education />
+    <Projects />
+    <Skills />
+  </main>
+  <KeyboardManager />
+</Layout>
+
+<style>
+  main {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+</style>

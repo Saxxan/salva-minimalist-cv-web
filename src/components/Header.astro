@@ -1,8 +1,18 @@
 ---
-import ThemeSwitch from "@/components/ui/ThemeSwitch.astro";
+// i18n
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+// Components
+import ThemeSwitch from "../components/ui/ThemeSwitch.astro";
+
+const currentLocale = Astro.currentLocale;
 ---
 
 <header>
+  <nav>
+    <a class={currentLocale == 'es' ? 'current' : ''} href={getRelativeLocaleUrl('es')}>ES</a>
+    <a class={currentLocale == 'en' ? 'current' : ''} href={getRelativeLocaleUrl('en')}>EN</a>
+  </nav>
   <ThemeSwitch />
 </header>
 
@@ -10,12 +20,32 @@ import ThemeSwitch from "@/components/ui/ThemeSwitch.astro";
   header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 12px 1rem;
+    gap: 20px;
+
+    & nav {
+      display: flex;
+      gap: 10px;
+
+      & a {
+        text-decoration: none;
+        border: 0;
+        color: var(--text-color);
+        font-weight: 300;
+        font-size: 13px;
+
+        &.current, &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
 
     @media print {
       display: none;
     }
   }
 </style>
+

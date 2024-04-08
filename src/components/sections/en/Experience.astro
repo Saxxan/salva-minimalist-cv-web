@@ -1,14 +1,14 @@
 ---
 // Data
-import { work } from "../../es/cv.json";
+import { work } from "../../../en/cv.json";
 
 // UI
-import StandardSection from "../ui/StandardSection.astro";
-import JobCard from "../ui/JobCard.astro";
-import ColumnCardsWrapper from "../ui/ColumnCardsWrapper.astro";
+import StandardSection from "../../ui/StandardSection.astro";
+import JobCard from "../../ui/JobCard.astro";
+import ColumnCardsWrapper from "../../ui/ColumnCardsWrapper.astro";
 ---
 
-<StandardSection title="Experiencia">
+<StandardSection title="Experience">
   <ColumnCardsWrapper>
     {
       work.map(({ name, position, url, startDate, endDate, summary }) => (

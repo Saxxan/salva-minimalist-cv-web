@@ -1,16 +1,16 @@
 ---
 // Data
-import { basics } from "@cv";
+import { basics } from "../../es/cv.json";
 
 // UI
-import StandardSection from "@/components/ui/StandardSection.astro";
+import StandardSection from "../ui/StandardSection.astro";
 
 // Typography
-import Text15 from "@/components/Typography/Text15.astro";
+import Text15 from "../Typography/Text15.astro";
 
 const { summary } = basics;
 ---
 
-<StandardSection title="About">
+<StandardSection title="Sobre mí">
   <Text15 text={summary} marginBottom={0} />
 </StandardSection>

@@ -1,0 +1,16 @@
+---
+// Data
+import { basics } from "../../../en/cv.json";
+
+// UI
+import StandardSection from "../../ui/StandardSection.astro";
+
+// Typography
+import Text15 from "../../Typography/Text15.astro";
+
+const { summary } = basics;
+---
+
+<StandardSection title="About">
+  <Text15 text={summary} marginBottom={0} />
+</StandardSection>

@@ -1,14 +1,14 @@
 ---
 // Data
-import { education } from "../../es/cv.json";
+import { education } from "../../../en/cv.json";
 
 // UI
-import StandardSection from "../ui/StandardSection.astro";
-import ColumnCardsWrapper from "../ui/ColumnCardsWrapper.astro";
-import JobCard from "../ui/JobCard.astro";
+import StandardSection from "../../ui/StandardSection.astro";
+import ColumnCardsWrapper from "../../ui/ColumnCardsWrapper.astro";
+import JobCard from "../../ui/JobCard.astro";
 ---
 
-<StandardSection title="Educación">
+<StandardSection title="Education">
   <ColumnCardsWrapper>
     {
       education.map(

@@ -9,7 +9,7 @@ interface Props {
 }
 
 // Typography
-import TitleH3 from "@/components/Typography/TitleH3.astro";
+import TitleH3 from "../Typography/TitleH3.astro";
 import Text15 from "../Typography/Text15.astro";
 import Text13 from "../Typography/Text13.astro";
 import TitleH4 from "../Typography/TitleH4.astro";
@@ -42,6 +42,16 @@ const date = `${start} - ${end}`;
 
         &:hover {
           text-decoration: underline;
+        }
+      }
+
+      @media (width <= 500px) {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+
+        & a {
+          align-self: flex-start;
         }
       }
     }
