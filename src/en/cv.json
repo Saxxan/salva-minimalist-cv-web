@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Salvador Puche Ibáñez",
-    "label": "Frontend Developer focused on creating responsive, accessible and usable UI/UX.",
+    "label": "Frontend Developer focused on creating responsive, accessible and usable UI/UX with 3 years of experience.",
     "image": "",
     "email": "salva.pucheibanez@gmail.com",
     "phone": "",
@@ -139,11 +139,19 @@
         "level": "Master"
       },
       {
+        "name": "MaterialUI",
+        "level": "Master"
+      },
+      {
         "name": "styled-components",
         "level": "Master"
       },
       {
         "name": "JavaScript",
+        "level": "Master"
+      },
+      {
+        "name": "TypeScript",
         "level": "Master"
       },
       {

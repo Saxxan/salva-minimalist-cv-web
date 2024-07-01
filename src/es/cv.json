@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Salvador Puche Ibáñez",
-    "label": "Desarrollador Frontend y Diseñador UX/UI. Creando webs y experiencias intuitivas, accesibles y limpias.",
+    "label": "Desarrollador Frontend y Diseñador UX/UI. 3 años creando webs y experiencias intuitivas, accesibles y limpias.",
     "image": "",
     "email": "salva.pucheibanez@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "Desarrollador de diseños responsive y accesibles. Prioridad a los diseños mobile fist y a las mejores prácticas de código limpio. Desarrollador Frontend y diseñador UX/UI por ESAT.  Siempre en constante aprendizaje para mejorar mis habilidades de diseño y desarrollo.",
+    "summary": "Desarrollador de diseños responsive y accesibles. Prioridad a los diseños mobile first y a las mejores prácticas de código limpio. Desarrollador Frontend y diseñador UX/UI por ESAT.  Siempre en constante aprendizaje para mejorar mis habilidades de diseño y desarrollo.",
     "location": {
       "address": "",
       "postalCode": "46021",
@@ -139,11 +139,19 @@
         "level": "Master"
       },
       {
+        "name": "MaterialUI",
+        "level": "Master"
+      },
+      {
         "name": "styled-components",
         "level": "Master"
       },
       {
         "name": "JavaScript",
+        "level": "Master"
+      },
+      {
+        "name": "TypeScript",
         "level": "Master"
       },
       {
@@ -361,5 +369,8 @@
         "TypeScript"
       ]
     }
-  ]
+  ],
+  "keyboard": {
+    
+  }
 }
