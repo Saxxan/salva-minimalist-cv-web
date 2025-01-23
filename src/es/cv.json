@@ -43,11 +43,22 @@
   },
   "work": [
     {
+      "name": "Aldous Bio S.L.",
+      "position": "Desarrollador Fullstack",
+      "url": "https://aldousbio.com/",
+      "startDate": "2024",
+      "endDate": "Actualidad",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    },
+    {
       "name": "Memorándum Multimedia",
       "position": "Desarrollador Frontend",
       "url": "https://memorandum.net/",
       "startDate": "2023",
-      "endDate": "Actualidad",
+      "endDate": "2024",
       "summary": "Diseño y desarrollo responsive, accesible e intuitivo UI/UX para aplicaciones y productos web. Utilizando HTML Semántico, CSS, Sass, Tailwind, Bootstrap, JavaScript y ReactJS.",
       "highlights": [
         ""
